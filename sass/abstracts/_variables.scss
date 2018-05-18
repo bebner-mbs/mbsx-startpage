@@ -1,0 +1,46 @@
+//Colors
+$color-primary: darken(#B9CBDC, 20%); //#ACB9CB;
+$color-primary-dark: darken(#5186AA, 20%); //#232E58;
+$color-primary-light: darken(#EDF1F6, 20%); //#EFF1F5;
+
+$color-green-dark: darken(#B1C800, 20%);//#5A723A;
+$color-green: darken(#D3DE82, 20%); //#98B76B;
+$color-green-light: darken(#F1F5D9, 20%);//#DBE6CD;
+
+$color-tertiary-dark: darken(#F6A800, 10%);
+$color-tertiary: darken(#FCCB77, 20%);
+$color-tertiary-light: darken(#FEE5BD, 10%);
+
+
+$color-white: #fff;
+$color-black: #000;
+$color-grey-dark: #777;
+$color-grey-dark-2: #333;
+$color-grey-light-1: #f7f7f7;
+$color-grey-light-2: #eee;
+
+$color-google: #d62d20;
+$color-google-dark: darken(#d62d20, 10%);
+
+$color-facebook: #3b5998;
+$color-facebook-dark: darken(#3b5998, 10%);
+
+/* 
+light-blue:     #EFF1F5 (RGB: 239, 241, 245)
+medium-blue:    #ACB9CB (RGB: 172, 185, 203)
+dark-blue:      #232E58 (RGB: 35, 46, 88)
+
+light-green:    #DBE6CD (RGB: 219, 230, 205)
+medium-green:   #98B76B (RGB: 152, 183, 107)
+dark-green:     #5A723A (RGB: 90, 114, 58)
+*/
+
+
+//Grid
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-horizontal: 6rem;
+
+
+//Font
+$default-font-size: 1.6rem;

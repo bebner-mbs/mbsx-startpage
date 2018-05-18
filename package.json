@@ -1,0 +1,25 @@
+{
+  "name": "onlinefair",
+  "version": "1.0.0",
+  "description": "Online Fair for BWL Mannheim",
+  "main": "app.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss public/stylesheets/landing.css -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "ejs": "^2.5.9",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "method-override": "^2.3.10",
+    "mongoose": "^5.0.17",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^5.0.0"
+  },
+  "devDependencies": {
+    "node-sass": "^4.9.0"
+  }
+}

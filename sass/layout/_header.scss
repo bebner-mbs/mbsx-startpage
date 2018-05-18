@@ -1,0 +1,82 @@
+.header {
+    height: 95vh;
+    background-image: linear-gradient(to right bottom, rgba($color-primary, 0.8), rgba($color-primary-dark, 0.8)), url(https://thumbs-94b9.kxcdn.com/thumbs/projekte/social-culture/schloss-mannheim/header_neu-2559x1920-q70.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    
+    &__logo-box {
+        position: absolute;
+        top: 40px;
+        left: 40px;
+    }
+    
+    &__logo-box--2 {
+        position: absolute;
+        top: 35px;
+        left: 400px;
+    }
+    
+    &__logo {
+        height: 50px;
+    }
+    
+    &__logo--2 {
+        height: 72px;
+    }
+    
+    &__text-box {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /*border: 3px white solid;*/
+        text-align: center;
+        
+        animation-name: fadeIn;
+        animation-duration: 5s;
+        animation-timing-function: ease-out;
+    }
+    
+    
+    
+}
+
+
+.header--2 {
+    height: 95vh;
+    background-image: linear-gradient(to right bottom, rgba($color-primary, 0.8), rgba($color-primary-dark, 0.8)), url(https://content-94b9.kxcdn.com/content/1-projekte/1-social-culture/33-schloss-mannheim/3-page-4/11_1011_uni_ma_ot_web__16.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+    
+    &__logo-box {
+        position: absolute;
+        top: 40px;
+        left: 40px;
+    }
+    
+    &__logo {
+        height: 70px;
+    }
+    
+    &__text-box {
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /*border: 3px white solid;*/
+        text-align: center;
+        
+        animation-name: fadeIn;
+        animation-duration: 5s;
+        animation-timing-function: ease-out;
+    }
+    
+}
