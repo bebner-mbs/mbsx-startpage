@@ -1,10 +1,10 @@
 body {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
-  font-size: 16px;
+//   font-size: 16px;
   line-height: 1.7;
   color: $color-primary-dark;
-  padding: 30px;
+  
 }
 
 .heading-primary {
@@ -12,30 +12,46 @@ body {
     color: $color-white;
     text-transform: uppercase;
     backface-visibility: hidden;
-    margin-bottom: 60px;
+    margin-bottom: 6rem;
+    
+    
     
     &--main {
         
         display: block;
-        font-size: 60px;
+        font-size: 6rem;
         font-weight: 400;
-        letter-spacing: 10px;
+        letter-spacing: 1.5rem;
         transform: translate(0, -5%);
         animation-name: moveInLeft;
         animation-duration: 3s;
         animation-timing-function: ease-out;
         
+        @include respond(phone) {
+            letter-spacing: 0.5rem;
+            font-size: 5rem;
+            
+        }
+        
     }
     
     &--sub {
         display: block;
-        font-size: 20px;
+        font-size: 2rem;
         font-weight: 700;
-        letter-spacing: 12.5px;
+        letter-spacing: 1.75rem;
         transform: translate(0, -15%);
         animation-name: moveInRight;
         animation-duration: 3s;
         animation-timing-function: ease-out;
+        
+        @include respond(phone) {
+            letter-spacing: 0.5rem;
+            font-size: 1.5rem;
+            
+        }
+        
+        
         }
 }
 
@@ -47,8 +63,16 @@ body {
     background-image: linear-gradient(to right, darken($color-primary, 25%), lighten($color-primary-dark, 20%));
     -webkit-background-clip: text;
     color: transparent;
-    letter-spacing: 2px;
+    letter-spacing: .2rem;
     transition: all .2s;
+    
+    @include respond(tab-port) {
+        font-size: 3rem;
+    }
+    
+    @include respond(phone) {
+        font-size: 2.5rem;
+    }
     
     &:hover {
         transform: skewY(-6deg) scale(1.2);

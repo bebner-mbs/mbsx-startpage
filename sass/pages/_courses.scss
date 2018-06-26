@@ -3,4 +3,8 @@
     padding: 25rem 0 15rem 0;
     margin-top: -25rem;
     text-align: center;
+    
+    // @include respond(tab-port) {
+    //     padding: 0;
+    // }
 }

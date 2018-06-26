@@ -3,6 +3,10 @@
     padding: 10rem 0;
     font-size: 1.4rem;
     
+    @include respond(tab-port) {
+        padding: 8rem 0;
+    }
+    
     &__logo-box {
         text-align: center;
         margin-bottom: 8rem;
@@ -13,8 +17,15 @@
         
         
         &--1 {
-            width: 35rem;
+            width: 25rem;
             transform: translateX(-4rem);
+            
+            @include respond(phone) {
+                width: 20rem;
+                display: block;
+                margin: 0 auto;
+                transform: translateX(0);
+            }
             
         }
         
@@ -30,6 +41,11 @@
         border-top: 1px solid $color-grey-light-1;
         padding-top: 2rem;
         display: inline-block;
+        
+        @include respond(tab-port) {
+            width: 100%;
+            text-align: center;
+        }
     }
     
     &__list {
@@ -70,5 +86,10 @@
         padding-top: 2rem;
         display: inline-block;
         float: right;
+        
+        @include respond(tab-port) {
+            width: 100%;
+            float: none;
+        }
     }
 }

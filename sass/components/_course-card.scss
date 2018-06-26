@@ -12,6 +12,16 @@
     transition: all .2s;
     
     
+    
+    @include respond(tab-port) {
+        width: 80%;
+    }
+    
+    @include respond(phone) {
+        width: 95%;
+    }
+    
+    
     &:hover {
         transform: translateY(-1rem);
         box-shadow: 0 2.5rem 4rem rgba($color-black, .2);
@@ -22,7 +32,12 @@
         display: table-cell;
         width: 50%;
         vertical-align: middle;
-        padding: 2rem;
+        padding: 0;
+        
+        @include respond(tab-land) {
+            display: table-row;
+        }
+        
         // background-image: url(https://s3.eu-central-1.amazonaws.com/mbsxs3/AW101/Grafik/AC101_Cover_V1.png);
         // background-size: cover;
         // background-position: center;
@@ -34,6 +49,10 @@
         width: 50%;
         vertical-align: top;
         padding: 3rem 5rem;
+        
+        @include respond(tab-land) {
+            padding: 1rem 1.7rem;
+        }
         
     }
     
@@ -51,17 +70,27 @@
     }
     
     &__thumbnail {
-        height: 150px;
+        height: 12rem;
         position: absolute;
         bottom: .5rem;
         right: 2.5rem;
+        
+        @include respond(phone) {
+            position: relative;
+            display: none;
+        }
     }
     
     &__thumbnail--edX {
-        height: 60px;
+        height: 4rem;
         position: absolute;
         bottom: 3.5rem;
         right: 3.5rem;
+        
+        @include respond(phone) {
+            position: relative;
+            display: none;
+        }
     }
     
     

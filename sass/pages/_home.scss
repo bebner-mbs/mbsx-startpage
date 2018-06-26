@@ -1,7 +1,10 @@
 .section-about {
     background-color: $color-grey-light-1;
     padding: 25rem 0;
-    margin-top: -20vh;
+    margin-top: -20rem;
+    
+    padding-bottom: 10rem;
+    min-height: 80vh;
 }
 
 .section-features {
@@ -9,22 +12,14 @@
     background-image: linear-gradient(to right bottom, rgba($color-primary, 0.8), rgba($color-primary-dark, 0.8)), url(http://www.siq-online.de/wp-content/uploads/2017/11/schloss.jpg);
     background-size: cover;
     background-position: top;
-    margin-top: -25rem;
+    
     min-height: 80vh;
-    // transform: skewY(-7deg);
-    
-    // & > * {
-    //     transform: skewY(7deg);
-    // }
-    
-    clip-path: polygon(0 25vh, 100% 0, 100% 55vh, 0 100%);
-    
 }
 
 .section-tours {
     background-color: $color-grey-light-1;
-    padding: 25rem 0 15rem 0;
-    margin-top: -25rem;
+    padding: 5rem 0 15rem 0;
+    margin-top: 0;
 }
 
 // .section-register {

@@ -20,8 +20,8 @@ app.use(bodyParser.json());
 app.use(methodOverride("_method"));
 
 //Mongo & Mongoose
-mongoose.connect("mongodb://localhost/website-mbsx");
-mongoose.Promise = Promise;
+//mongoose.connect("mongodb://bebner_mbs:megamooc2015@ds227570.mlab.com:27570/mbsx");
+//mongoose.Promise = Promise;
 
 //Authentication
 app.use(require("express-session")({
