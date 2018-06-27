@@ -4,7 +4,8 @@
   "description": "Online Fair for BWL Mannheim",
   "main": "app.js",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss public/stylesheets/landing.css -w"
+    "compile:sass": "node-sass sass/main.scss public/stylesheets/landing.css -w",
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
